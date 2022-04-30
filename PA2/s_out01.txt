@@ -1,0 +1,29 @@
+=== CFS input values ===
+num_process = 2
+sched_latency = 48
+min_granularity = 6
+burst_time = [30,30]
+nice_value = [0,0]
+=== CFS algorithm ===
+=== Step 0 ===
+Process	Weight	Remain	Slice	vruntime
+P0	1024	30	24	0.00
+P1	1024	30	24	0.00
+=== Step 1 ===
+Process	Weight	Remain	Slice	vruntime
+P0	1024	6	24	24.00
+P1	1024	30	24	0.00
+=== Step 2 ===
+Process	Weight	Remain	Slice	vruntime
+P0	1024	6	24	24.00
+P1	1024	6	24	24.00
+=== Step 3 ===
+Process	Weight	Remain	Slice	vruntime
+P0	1024	0	24	30.00
+P1	1024	6	24	24.00
+=== Step 4 ===
+Process	Weight	Remain	Slice	vruntime
+P0	1024	0	24	30.00
+P1	1024	0	24	30.00
+=== Gantt chart ===
+0 P0 24 P1 48 P0 54 P1 60 

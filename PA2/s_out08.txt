@@ -1,0 +1,69 @@
+=== CFS input values ===
+num_process = 3
+sched_latency = 48
+min_granularity = 6
+burst_time = [30,30,30]
+nice_value = [19,0,-20]
+=== CFS algorithm ===
+=== Step 0 ===
+Process	Weight	Remain	Slice	vruntime
+P0	15	30	6	0.00
+P1	1024	30	6	0.00
+P2	88761	30	47	0.00
+=== Step 1 ===
+Process	Weight	Remain	Slice	vruntime
+P0	15	24	6	409.60
+P1	1024	30	6	0.00
+P2	88761	30	47	0.00
+=== Step 2 ===
+Process	Weight	Remain	Slice	vruntime
+P0	15	24	6	409.60
+P1	1024	24	6	6.00
+P2	88761	30	47	0.00
+=== Step 3 ===
+Process	Weight	Remain	Slice	vruntime
+P0	15	24	6	409.60
+P1	1024	24	6	6.00
+P2	88761	0	47	0.35
+=== Step 4 ===
+Process	Weight	Remain	Slice	vruntime
+P0	15	24	6	409.60
+P1	1024	18	6	12.00
+P2	88761	0	47	0.35
+=== Step 5 ===
+Process	Weight	Remain	Slice	vruntime
+P0	15	24	6	409.60
+P1	1024	12	6	18.00
+P2	88761	0	47	0.35
+=== Step 6 ===
+Process	Weight	Remain	Slice	vruntime
+P0	15	24	6	409.60
+P1	1024	6	6	24.00
+P2	88761	0	47	0.35
+=== Step 7 ===
+Process	Weight	Remain	Slice	vruntime
+P0	15	24	6	409.60
+P1	1024	0	6	30.00
+P2	88761	0	47	0.35
+=== Step 8 ===
+Process	Weight	Remain	Slice	vruntime
+P0	15	18	6	819.20
+P1	1024	0	6	30.00
+P2	88761	0	47	0.35
+=== Step 9 ===
+Process	Weight	Remain	Slice	vruntime
+P0	15	12	6	1228.80
+P1	1024	0	6	30.00
+P2	88761	0	47	0.35
+=== Step 10 ===
+Process	Weight	Remain	Slice	vruntime
+P0	15	6	6	1638.40
+P1	1024	0	6	30.00
+P2	88761	0	47	0.35
+=== Step 11 ===
+Process	Weight	Remain	Slice	vruntime
+P0	15	0	6	2048.00
+P1	1024	0	6	30.00
+P2	88761	0	47	0.35
+=== Gantt chart ===
+0 P0 6 P1 12 P2 42 P1 48 P1 54 P1 60 P1 66 P0 72 P0 78 P0 84 P0 90 

@@ -1,0 +1,13 @@
+# COMP3511 PA2 (Spring 2022)
+# An input file for a Simplified Completely Fair Scheduler (CFS)
+# Empty lines and lines starting with '#' are ignored
+
+# assume we have 10 processes
+num_process = 10
+sched_latency = 48
+min_granularity = 1
+
+# Example:
+
+burst_time = 10 20 30 40 50 60 70 80 90 100
+nice_value =  9  8  7  6  5  4  3  2  1   0

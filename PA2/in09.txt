@@ -1,0 +1,19 @@
+# COMP3511 PA2 (Spring 2022)
+# An input file for a Simplified Completely Fair Scheduler (CFS)
+# Empty lines and lines starting with '#' are ignored
+
+# assume we have 3 processes
+num_process = 3
+sched_latency = 48
+
+# comparing with input8, we tried to use a very small min_granularity
+# what is your observation by comparing the final chatt chart of input8 with input9?
+min_granularity = 1
+
+# Example:
+# P0: burst time is 30, nice value is 19
+# P1: burst time is 30, nice value is 0 
+# P2: burst time is 30, nice value is -20
+
+burst_time =  30 30  30
+nice_value =  19  0 -20

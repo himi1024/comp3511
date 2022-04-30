@@ -1,0 +1,23 @@
+# COMP3511 PA2 (Spring 2022)
+# An input file for a Simplified Completely Fair Scheduler (CFS)
+# Empty lines and lines starting with '#' are ignored
+
+# assume we have 10 processes
+num_process = 10
+sched_latency = 48
+min_granularity = 6
+
+# Example:
+# P0: burst time is 10, nice value is 0 (default)
+# P1: burst time is 20, nice value is 0 (default)
+# P2: burst time is 30, nice value is 0 (default)
+# P3: burst time is 40, nice value is 0 (default)
+# P4: burst time is 50, nice value is 0 (default)
+# P5: burst time is 60, nice value is 0 (default)
+# P6: burst time is 70, nice value is 0 (default)
+# P7: burst time is 80, nice value is 0 (default)
+# P8: burst time is 90, nice value is 0 (default)
+# P9: burst time is 100, nice value is 0 (default)
+
+burst_time =  10 20 30 40 50 60 70 80 90 100
+nice_value =   0  0  0  0  0  0  0  0  0   0
